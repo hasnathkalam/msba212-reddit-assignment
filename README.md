@@ -31,7 +31,7 @@ Create a text file named reddit.env in the same project folder with the followin
 REDDIT_CLIENT_ID     = "YOUR_CLIENT_ID_HERE"  
 REDDIT_CLIENT_SECRET = "YOUR_CLIENT_SECRET_HERE"  
 REDDIT_USER_AGENT    = "YOUR_USER_AGENT_HERE"  
-Save this file locally and do not upload it to GitHub for security reasons.
+Saved the actual .env file locally and would not upload it to GitHub for security reasons. This is example file.
 
 ### 4. Execution
 Run the script using either of the following methods:
@@ -69,5 +69,4 @@ Columns include:
 Duplicate posts are removed using the permalink, and missing fields are represented as NaN.
 
 Author: Hasnath Kalam  
-MSBA Candidate | California State University, Sacramento  
 GitHub Repository: https://github.com/hasnathkalam/msba212-reddit-assignment
