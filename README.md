@@ -5,7 +5,12 @@ Instructor: Professor Joseph Richards
 California State University, Sacramento  
 
 ## Assignment Overview
-This assignment develops a Python-based Reddit data collection pipeline using the PRAW (Python Reddit API Wrapper) library. The program connects to the Reddit API, retrieves “hot” and keyword-searched posts from Netflix-related subreddits, cleans and deduplicates the data, and exports the results to a structured CSV file for social media analytics.
+This assignment develops a Python-based Reddit data collection pipeline using the PRAW (Python Reddit API Wrapper) library. The project focuses on analyzing Reddit discussions related to Netflix by retrieving “hot” and keyword-searched posts from the following three subreddits:
+- r/netflix  
+- r/movies  
+- r/cordcutters  
+
+The collected data is cleaned, deduplicated, and exported into a structured CSV file for social media analytics.
 
 ## How to Run
 
