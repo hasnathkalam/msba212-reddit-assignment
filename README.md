@@ -45,7 +45,8 @@ collector.search_posts("Netflix Originals", ["netflix","movies"], limit_per_sub=
 collector.search_posts("pricing OR price increase", ["netflix","Streaming"], limit_per_sub=50)
 collector.export_csv(out_csv)
 
-## **Output Description**
+-----------
+## Output Description
 
 The program generates a structured dataset named **`reddit_data.csv`**, which contains Reddit posts related to Netflix pricing, shows, and user sentiment.  
 Each record in the CSV file represents a single Reddit post extracted from one of the target subreddits. The dataset is cleaned to remove duplicates, truncated for long text fields, and standardized for analytical use.
