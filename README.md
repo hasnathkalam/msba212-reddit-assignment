@@ -17,8 +17,9 @@ Using the **PRAW (Python Reddit API Wrapper)** library, the program connects sec
 ---
 
 ## How to Use
-1. **Environment Setup**  
-Place a file named `reddit.env` in the same folder as `reddit_code.py` and include:
+1. **Environment Setup**
+
+Must place a file named `reddit.env` in the same folder as `reddit_code.py` and include:
  
 `REDDIT_CLIENT_ID=“your_client_id”
 
@@ -26,7 +27,7 @@ REDDIT_CLIENT_SECRET=“your_client_secret”
 
 REDDIT_USER_AGENT=“your_user_agent”`
 
-** Did not** upload this file to GitHub or not shared it publicly. It is excluded by `.gitignore` for security reasons, as per the assignment gudiance. 
+Should NOT* upload this file to GitHub or not shared it publicly. It is excluded by `.gitignore` for security reasons, as per the assignment guidance. 
 ------------------
 
 ### 2. Install Dependencies
@@ -36,7 +37,7 @@ REDDIT_USER_AGENT=“your_user_agent”`
 - **Libraries:** `praw`, `pandas`, `python-dotenv`  
 - **Runtime:** Google Colab or local Python environment
 
- * Someone can run the project either on Google Colab or in a local Python environment (e.g., VS Code, Anaconda, or terminal) — both will produce the same reddit_data.csv output*
+Someone can run the project either on Google Colab or in a local Python environment (e.g., VS Code, Anaconda, or terminal) — both will produce the same reddit_data.csv output*
 ----------------------
 
 ## Output Description
