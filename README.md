@@ -18,19 +18,23 @@ Using the **PRAW (Python Reddit API Wrapper)** library, the program connects sec
 
 ## How to Use
 1. **Environment Setup**  
-   Place a file named `reddit.env` in the same folder as `reddit_code.py` and include:  
-REDDIT_CLIENT_ID=“your_client_id”
+Place a file named `reddit.env` in the same folder as `reddit_code.py` and include:
+ 
+`REDDIT_CLIENT_ID=“your_client_id”
 REDDIT_CLIENT_SECRET=“your_client_secret”
-REDDIT_USER_AGENT=“your_user_agent”
+REDDIT_USER_AGENT=“your_user_agent”`
+
 **Do not** upload this file to GitHub or share it publicly. It is excluded by `.gitignore` for security reasons.
 ------------------
 
 ### 2. Install Dependencies
-Run one of the following commands to install required libraries:
-```bash
-pip install praw pandas python-dotenv
 
-*** Option A – Command Line***
+## System Requirements
+- **Python:** 3.9 or later  
+- **Libraries:** `praw`, `pandas`, `python-dotenv`  
+- **Runtime:** Google Colab or local Python environment  
+
+***Option A – Command Line***
 python reddit_code.py
 
 ***Option B – Google Colab***
@@ -72,7 +76,7 @@ Empty fields and missing values are recorded as **`NaN`**, while duplicates are 
 
 -----
 
-This dataset serves as a foundation for further analytics tasks such as:
+## This dataset serves as a foundation for further analytics tasks such as:
 - Sentiment and polarity classification using NLP models.  
 - Topic modeling using LDA or LSA.  
 - Trend tracking of Netflix discussions over time.  
