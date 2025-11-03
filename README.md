@@ -23,14 +23,12 @@ REDDIT_CLIENT_ID=“your_client_id”
 REDDIT_CLIENT_SECRET=“your_client_secret”
 REDDIT_USER_AGENT=“your_user_agent”
 **Do not** upload this file to GitHub or share it publicly. It is excluded by `.gitignore` for security reasons.
----
+------------------
 
 ### 2. Install Dependencies
 Run one of the following commands to install required libraries:
 ```bash
 pip install praw pandas python-dotenv
-
-### 2. Install Dependencies
 
 *** Option A – Command Line***
 python reddit_code.py
@@ -45,7 +43,8 @@ collector.search_posts("Netflix Originals", ["netflix","movies"], limit_per_sub=
 collector.search_posts("pricing OR price increase", ["netflix","Streaming"], limit_per_sub=50)
 collector.export_csv(out_csv)
 
------------
+----------------------
+
 ## Output Description
 
 The program generates a structured dataset named **`reddit_data.csv`**, which contains Reddit posts related to Netflix pricing, shows, and user sentiment.  
@@ -70,6 +69,8 @@ Each record in the CSV file represents a single Reddit post extracted from one o
 
 All text is encoded in UTF-8 and stored in CSV format, ensuring compatibility with Python, R, or spreadsheet tools.  
 Empty fields and missing values are recorded as **`NaN`**, while duplicates are removed using the `permalink` as a unique identifier.  
+
+-----
 
 This dataset serves as a foundation for further analytics tasks such as:
 - Sentiment and polarity classification using NLP models.  
