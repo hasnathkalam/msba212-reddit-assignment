@@ -1,4 +1,3 @@
-# Ignore sensitive credentials and system files
 reddit.env
 __pycache__/
 .ipynb_checkpoints/
