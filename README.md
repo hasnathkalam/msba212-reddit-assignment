@@ -21,10 +21,12 @@ Using the **PRAW (Python Reddit API Wrapper)** library, the program connects sec
 Place a file named `reddit.env` in the same folder as `reddit_code.py` and include:
  
 `REDDIT_CLIENT_ID=“your_client_id”
+
 REDDIT_CLIENT_SECRET=“your_client_secret”
+
 REDDIT_USER_AGENT=“your_user_agent”`
 
-** Do not** upload this file to GitHub or share it publicly. It is excluded by `.gitignore` for security reasons.
+** Did not** upload this file to GitHub or not shared it publicly. It is excluded by `.gitignore` for security reasons, as per the assignment gudiance. 
 ------------------
 
 ### 2. Install Dependencies
@@ -32,8 +34,9 @@ REDDIT_USER_AGENT=“your_user_agent”`
 ## System Requirements
 - **Python:** 3.9 or later  
 - **Libraries:** `praw`, `pandas`, `python-dotenv`  
-- **Runtime:** Google Colab or local Python environment  
-You can run the project either on Google Colab or in a local Python environment (e.g., VS Code, Anaconda, or terminal) — both will produce the same reddit_data.csv output.
+- **Runtime:** Google Colab or local Python environment
+
+ * Someone can run the project either on Google Colab or in a local Python environment (e.g., VS Code, Anaconda, or terminal) — both will produce the same reddit_data.csv output*
 ----------------------
 
 ## Output Description
@@ -58,11 +61,7 @@ Each record in the CSV file represents a single Reddit post extracted from one o
 | **domain** | Domain of any linked content (e.g., youtube.com, netflix.com). |
 | **search_query** | The search term used to collect the post (e.g., “Netflix Originals”). |
 
-All text is encoded in UTF-8 and stored in CSV format, ensuring compatibility with Python, R, or spreadsheet tools.  
-Empty fields and missing values are recorded as **`NaN`**, while duplicates are removed using the `permalink` as a unique identifier.  
-
------
-
+All text is encoded in UTF-8 and stored in CSV format, ensuring compatibility witS
 ## This dataset serves as a foundation for further analytics tasks such as:
 - Sentiment and polarity classification using NLP models.  
 - Topic modeling using LDA or LSA.  
