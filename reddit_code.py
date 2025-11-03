@@ -7,7 +7,6 @@ import pandas as pd
 import praw
 from dotenv import load_dotenv
 
-# Minimal, rubric-aligned logging
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 log = logging.getLogger("reddit_pipeline")
 
