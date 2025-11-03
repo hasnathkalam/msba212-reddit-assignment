@@ -1,72 +1,21 @@
-# Reddit API Data Collection Pipeline – Netflix Conversations
-Student: Hasnath Kalam  
-Course: MSBA 212 – Social Media Analytics  
-Instructor: Professor Joseph Richards  
-California State University, Sacramento  
+# Reddit API Data Collection Pipeline — Netflix Conversations
+
+**Student:** Hasnath Kalam  
+**Course:** MSBA 212 – Social Media Analytics  
+**Instructor:** Professor Joseph Richards  
+**Institution:** California State University, Sacramento  
+
+---
 
 ## Assignment Overview
-This assignment develops a Python-based Reddit data collection pipeline using the PRAW (Python Reddit API Wrapper) library. The project focuses on analyzing Reddit discussions related to Netflix by retrieving “hot” and keyword-searched posts from the following three subreddits:
-- r/netflix  
-- r/movies  
-- r/cordcutters  
+This project builds an end-to-end Python pipeline for analyzing Reddit discussions about **Netflix pricing, content, and audience sentiment**.  
+Using the **PRAW (Python Reddit API Wrapper)** library, the program connects securely to Reddit, retrieves both *hot* and keyword-based posts from several Netflix-related subreddits, processes the data with pandas, removes duplicates, handles missing values, and exports a clean CSV dataset for social-media analytics or text-mining tasks.  
 
-The collected data is cleaned, deduplicated, and exported into a structured CSV file for social media analytics.
+**Subreddits covered:**  
+`r/netflix`, `r/movies`, `r/cordcutters`, `r/NetflixBestOf`, `r/television`, `r/Streaming`
 
-## How to Run
+---
 
-### 1. Prerequisites
-- Python 3.8 or higher  
-- Google Colab or Jupyter Notebook  
-- Reddit Developer Account (for API credentials)  
-
-### 2. Installation
-Install dependencies:
-pip install praw pandas python-dotenv  
-
-Or use the provided requirements file:
-pip install -r requirements.txt  
-
-### 3. Configuration
-Create a text file named reddit.env in the same project folder with the following credentials:
-REDDIT_CLIENT_ID     = "YOUR_CLIENT_ID_HERE"  
-REDDIT_CLIENT_SECRET = "YOUR_CLIENT_SECRET_HERE"  
-REDDIT_USER_AGENT    = "YOUR_USER_AGENT_HERE"  
-Saved the actual .env file locally and would not upload it to GitHub for security reasons. This is example file.
-
-### 4. Execution
-Run the script using either of the following methods:
-
-**Option A – Command Line:**
-python reddit_code.py  
-
-**Option B – Google Colab:**
-from reddit_code import RedditCollector  
-env_path = "/content/drive/MyDrive/Reddit_Assignment/.env"  
-out_csv  = "/content/drive/MyDrive/Reddit_Assignment/reddit_data.csv"  
-collector = RedditCollector(env_path)  
-collector.fetch_hot_posts(["netflix", "movies", "cordcutters"], limit_per_sub=50)  
-collector.search_posts("Netflix Originals", ["netflix", "movies"], limit_per_sub=50)  
-collector.export_csv(out_csv)  
-
-## Output Description
-The program produces a CSV file named reddit_data.csv containing cleaned Reddit post data.  
-Columns include:  
-- title – Post title  
-- score – Net upvotes  
-- upvote_ratio – Ratio of upvotes to total votes  
-- num_comments – Number of comments  
-- author – Username of the post’s author  
-- subreddit – Subreddit name  
-- url – External link (if applicable)  
-- permalink – Direct Reddit post link  
-- created_utc – Post creation timestamp  
-- is_self – Boolean indicating text-only posts  
-- selftext – Post body (truncated to 500 characters)  
-- flair – Post flair or tag  
-- domain – Linked content domain  
-- search_query – Keyword used to find the post  
-
-Duplicate posts are removed using the permalink, and missing fields are represented as NaN.
-
-Author: Hasnath Kalam  
-GitHub Repository: https://github.com/hasnathkalam/msba212-reddit-assignment
+## How to Use
+1. **Environment Setup**  
+   Place a file named `reddit.env` in the same folder as `reddit_code.py` and include:  

@@ -1,4 +1,6 @@
+# Ignore sensitive credentials and system files
 reddit.env
-venv/
 __pycache__/
 .ipynb_checkpoints/
+.DS_Store
+*.ipynb
