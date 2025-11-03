@@ -39,32 +39,8 @@ REDDIT_USER_AGENT=“your_user_agent”`
 
 ***Option B – Google Colab***
 from reddit_code import RedditCollector
-
-# Paths in Google Drive
 env_path = "/content/drive/MyDrive/Reddit_Assignment/reddit.env"
 out_csv  = "/content/drive/MyDrive/Reddit_Assignment/reddit_data.csv"
-
-# Initialize collector
-collector = RedditCollector(env_path)
-
-# Task 1: Fetch HOT posts
-collector.fetch_hot_posts([
-    "netflix", "movies", "cordcutters",
-    "NetflixBestOf", "television", "Streaming"
-], limit_per_sub=50)
-
-# Task 2: Search keyword-based posts
-collector.search_posts("Netflix Originals", [
-    "netflix", "movies", "cordcutters", "NetflixBestOf", "television", "Streaming"
-], limit_per_sub=30)
-
-collector.search_posts("pricing OR price increase", [
-    "netflix", "movies", "cordcutters", "NetflixBestOf", "television", "Streaming"
-], limit_per_sub=30)
-
-# Task 3: Export clean CSV
-collector.export_csv(out_csv)
-
 ----------------------
 
 ## Output Description
