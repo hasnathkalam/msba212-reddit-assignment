@@ -61,11 +61,17 @@ Each record in the CSV file represents a single Reddit post extracted from one o
 | **domain** | Domain of any linked content (e.g., youtube.com, netflix.com). |
 | **search_query** | The search term used to collect the post (e.g., “Netflix Originals”). |
 
-All text is encoded in UTF-8 and stored in CSV format, ensuring compatibility witS
-## This dataset serves as a foundation for further analytics tasks such as:
+All text is encoded in UTF-8 and stored in CSV format, ensuring compatibility. 
+
+## This dataset may serve as a dataset for further analytics tasks such as:
 - Sentiment and polarity classification using NLP models.  
 - Topic modeling using LDA or LSA.  
 - Trend tracking of Netflix discussions over time.  
 - Cross-subreddit comparison of engagement and sentiment levels.
+
+## Concluding Remarks
+
+This project highlights how social media data can be systematically collected, cleaned, and prepared for analytics using ethical and secure methods. The use of the `.env` file ensures confidentiality of API credentials. 
+The resulting `reddit_data.csv` provides a structured foundation for further natural language processing, such as sentiment analysis or trend detection.
 
 
