@@ -24,7 +24,7 @@ Place a file named `reddit.env` in the same folder as `reddit_code.py` and inclu
 REDDIT_CLIENT_SECRET=“your_client_secret”
 REDDIT_USER_AGENT=“your_user_agent”`
 
-**Do not** upload this file to GitHub or share it publicly. It is excluded by `.gitignore` for security reasons.
+** Do not** upload this file to GitHub or share it publicly. It is excluded by `.gitignore` for security reasons.
 ------------------
 
 ### 2. Install Dependencies
@@ -33,14 +33,7 @@ REDDIT_USER_AGENT=“your_user_agent”`
 - **Python:** 3.9 or later  
 - **Libraries:** `praw`, `pandas`, `python-dotenv`  
 - **Runtime:** Google Colab or local Python environment  
-
-***Option A – Command Line***
-!python reddit_code.py
-
-***Option B – Google Colab***
-from reddit_code import RedditCollector
-env_path = "/content/drive/MyDrive/Reddit_Assignment/reddit.env"
-out_csv  = "/content/drive/MyDrive/Reddit_Assignment/reddit_data.csv"
+You can run the project either on Google Colab or in a local Python environment (e.g., VS Code, Anaconda, or terminal) — both will produce the same reddit_data.csv output.
 ----------------------
 
 ## Output Description
